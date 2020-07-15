@@ -58,17 +58,21 @@ To train and test the model, run the corresponding cells in trainUnet.ipynb
 
 The segmentation result on test data gained 80% IOU.
 
-![data/validation/images/0483.jpg](data/validation/images/0483.jpg =250x)
-![data/validation/label/03.png](data/validation/label/03.png =250x)
-![data/validation/predict/03.png](data/validation/predict/03.png =250x)
-![data/validation/3_contour.png](data/validation/3_contour.png =250x)
+![data/validation/images/0483.jpg](data/validation/images/0483.jpg)
+![data/validation/label/03.png](data/validation/label/03.png)
+![data/validation/predict/03.png](data/validation/predict/03.png)
+![data/validation/3_contour.png](data/validation/3_contour.png)
 
-![data/validation/images/0490.jpg](data/validation/images/0490.jpg =250x)
-![data/validation/label/10.png](data/validation/label/10.png =250x)
-![data/validation/predict/10.png](data/validation/predict/10.png =250x)
-![data/validation/10_contour.png](data/validation/10_contour.png =250x)
+_______________________________________________________________________
 
-![data/validation/images/0508.jpg](data/validation/images/0508.jpg =250x)
-![data/validation/label/28.png](data/validation/label/28.png =250x)
-![data/validation/predict/28.png](data/validation/predict/28.png =250x)
-![data/validation/28_contour.png](data/validation/28_contour.png =250x)
+![data/validation/images/0490.jpg](data/validation/images/0490.jpg)
+![data/validation/label/10.png](data/validation/label/10.png)
+![data/validation/predict/10.png](data/validation/predict/10.png)
+![data/validation/10_contour.png](data/validation/10_contour.png)
+
+_______________________________________________________________________
+
+![data/validation/images/0508.jpg](data/validation/images/0508.jpg)
+![data/validation/label/28.png](data/validation/label/28.png)
+![data/validation/predict/28.png](data/validation/predict/28.png)
+![data/validation/28_contour.png](data/validation/28_contour.png)
