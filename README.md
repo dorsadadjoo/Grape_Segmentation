@@ -6,7 +6,7 @@ The purpose of this code is to segment the grapes in the field usign deep neural
 ### Data
 
 We used 2 datasets to train U-Net for grape segmentation. 
-- The KALALA Dataset  : Purple Grapes - not annotated originally
+- The KALALA Dataset  : Purple Grapes - not annotated originally - Annotated using Matlab Graph Cut.
 - Embrapa Wine Grape Instance Segmentation Dataset (Embrapa [WGISD](https://github.com/thsant/wgisd) based on this [paper](https://arxiv.org/abs/1907.11819)) : Green Grapes - with labels 
 
 ### Data augmentation
@@ -23,15 +23,13 @@ See dataPrepare.ipynb and data.py for detail.
 
 This deep neural network is implemented with Keras functional API, which makes it extremely easy to experiment with different interesting architectures.
 
-Output from the network is a 512*512 which represents mask that should be learned. Sigmoid activation function
+Output from the network is a 256*256 which represents mask that should be learned. Sigmoid activation function
 makes sure that mask pixels are in \[0, 1\] range.
 
 ### Training
 
-The network was trained with 602 512*512 images. The training data could be found [here](https://drive.google.com/drive/folders/1r3HPxAcmtHXD9vOMfSvwOsLLZmLlMhU3?usp=sharing)
+The network was trained with 602 256*256 images. The training data could be found [here](https://drive.google.com/drive/folders/1r3HPxAcmtHXD9vOMfSvwOsLLZmLlMhU3?usp=sharing)
 Also you can download the pre-trained model (trained with the above data) from [here](https://drive.google.com/file/d/1dnvFk5oFDl2IKnEynlcQuBGEJiobj2RJ/view?usp=sharing)
-
-The model is trained for 5 epochs.
 
 After 5 epochs, calculated accuracy is about 0.83.
 
@@ -58,19 +56,19 @@ To train and test the model, run the corresponding cells in trainUnet.ipynb
 
 ### Results
 
-The segmentation result on test data from both datasets gained 80% IOU.
+The segmentation result on test data gained 80% IOU.
 
-![data/validation/images/0483.jpg](data/validation/images/0483.jpg)
-![data/validation/label/03.png](data/validation/label/03.png)
-![data/validation/predict/03.png](data/validation/predict/03.png)
-![data/validation/3_contour.png](data/validation/3_contour.png)
+![data/validation/images/0483.jpg](data/validation/images/0483.jpg =250x)
+![data/validation/label/03.png](data/validation/label/03.png =250x)
+![data/validation/predict/03.png](data/validation/predict/03.png =250x)
+![data/validation/3_contour.png](data/validation/3_contour.png =250x)
 
-![data/validation/images/0490.jpg](data/validation/images/0490.jpg)
-![data/validation/label/10.png](data/validation/label/10.png)
-![data/validation/predict/10.png](data/validation/predict/10.png)
-![data/validation/10_contour.png](data/validation/10_contour.png)
+![data/validation/images/0490.jpg](data/validation/images/0490.jpg =250x)
+![data/validation/label/10.png](data/validation/label/10.png =250x)
+![data/validation/predict/10.png](data/validation/predict/10.png =250x)
+![data/validation/10_contour.png](data/validation/10_contour.png =250x)
 
-![data/validation/images/0508.jpg](data/validation/images/0508.jpg)
-![data/validation/label/28.png](data/validation/label/28.png)
-![data/validation/predict/28.png](data/validation/predict/28.png)
-![data/validation/28_contour.png](data/validation/28_contour.png)
+![data/validation/images/0508.jpg](data/validation/images/0508.jpg =250x)
+![data/validation/label/28.png](data/validation/label/28.png =250x)
+![data/validation/predict/28.png](data/validation/predict/28.png =250x)
+![data/validation/28_contour.png](data/validation/28_contour.png =250x)
